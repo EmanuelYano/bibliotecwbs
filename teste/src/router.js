@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/cadastro',
-      name: '/cadastre-se',
+      name: 'cadastre',
       component: Cadastro
     },
   ]

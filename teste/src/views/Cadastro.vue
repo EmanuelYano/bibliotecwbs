@@ -36,14 +36,9 @@
                   <v-flex xs12 sm6 md12>
                       <v-text-field
                       v-model="password"
-                      :append-icon="show1 ? 'visibility' : 'visibility_off'"
-                      :rules="[rules.required, rules.min]"
-                      :type="show1 ? 'text' : 'password'"
+                      
                       name="input-10-1"
-                      label="Normal with hint text"
-                      hint="At least 8 characters"
-                      counter
-                      @click:append="show1 = !show1"
+                      label="Senha"
                       ></v-text-field>
                     </v-flex>
 
@@ -59,4 +54,4 @@
           </div>
       </v-layout>    
     </div>
-</template>'''''''''''''  '
+</template>
