@@ -1,42 +1,57 @@
 <template>
     <div>
-
+      <v-container>
         <v-form>
-            <v-container>
-              <v-layout align-end justify-center column >
-        
-                <v-flex xs12 sm6 md7>
+           <v-layout align-center justify-center column class="elevation-2">
+             <v-flex xs12 sm6 md12>
                   <v-text-field
                     label="Nome"
                   ></v-text-field>
                 </v-flex>
         
-                <v-flex xs12 sm6 md7>
+                <v-flex xs12 sm6 md12>
                   <v-text-field
-                    label="Codigo do Aluno"
+                    label="Código do Aluno"
                   ></v-text-field>
                 </v-flex>
         
-                <v-flex xs12 sm6 md7>
+                <v-flex xs12 sm6 md12>
                     <v-text-field
-                      label="Email"
+                      label="E-mail"
                     ></v-text-field>
                   </v-flex>
 
-                  <v-flex xs12 sm6 md7>
+                  <v-flex xs12 sm6 md12>
                     <v-text-field
-                      label="Numero de Telefone"
+                      label="Número de Telefone"
                     ></v-text-field>
                   </v-flex>
                   
-                  <v-flex xs12 sm6 md7>
+                  <v-flex xs12 sm6 md12>
                     <v-text-field
-                      label="Serie"
+                      label="Série"
                     ></v-text-field>
                   </v-flex>
-            
+
+                  <v-flex xs12 sm6 md12>
+                      <v-text-field
+                      v-model="password"
+                      
+                      name="input-10-1"
+                      label="Senha"
+                      ></v-text-field>
+                    </v-flex>
+
               </v-layout>
-            </v-container>
-          </v-form>
+            </v-form>
+      </v-container>
+
+      <v-layout align-center justify-center>
+          <div>
+              
+                <v-btn color="green">confirmar</v-btn>
+            
+          </div>
+      </v-layout>    
     </div>
 </template>
